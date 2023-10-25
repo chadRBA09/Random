@@ -16,8 +16,8 @@ public class Principal {
             if(i % 1000 == 0) // a cada 1000 inserções, imprime a altura da arvore
             {
                 double log2 = Math.log(i) / Math.log(2); // calcula o log na base 2 de i 
-                log2 *= 1.39; // multiplica o log por 1.39 para aproximar o valor do log na base 2
-                System.out.println("Número de nós = " + i + " --- log(i,2) = " + log2 + " --- h = " + arvore.getAltura()); // imprime o numero de nós, o log na base 2 e a altura da arvore
+                double log2knuth = log2 * 1.39; // multiplica o log por 1.39 para aproximar o valor do log na base 2
+                System.out.println("Número de nós = " + i + " --- log(i,2) = " + log2 +  " log2 do knuth = " + log2knuth + " --- h = " + arvore.getAltura()); // imprime o numero de nós, o log na base 2 e a altura da arvore
             }
         }
     }
